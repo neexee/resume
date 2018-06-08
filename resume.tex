@@ -1,0 +1,84 @@
+\documentclass[final]{letter}
+\usepackage{nopageno}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{fix-cm}
+\usepackage{fullpage}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\hoffset}{-.6in}
+\addtolength{\textheight}{1.6in}
+\addtolength{\voffset}{-.7in}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\begin{document}
+\begin{center}
+
+% Title bar
+{\fontsize{25}{40}\selectfont\bf{Мачульскис Сергей}}
+  {\hfill
+    \begin{tabular}{c}
+        \href{mailto:machulskissv@gmail.com}{machulskissv@gmail.com}\\
+        +7 913 2066438\\
+     \end{tabular}
+  }
+\rule{.98\textwidth}{1pt}
+
+% Need verticle space after hbar
+\addvspace{.1cm}
+
+\end{center}
+
+{\bf Образование}
+\begin{itemize}
+\item 2009-2013. Бакалавриат ФИТ НГУ. Выпускная работа была посвящена кластеризации больших графов.
+\item 2013-2015. Магистратура ФИТ НГУ. Занимался разработкой статического анализатора кода специализированного языка, предназначенного для реализации больших численных моделей на суперкомпьютерах.
+\end{itemize}
+
+{\bf Знания}
+\begin {itemize}
+\item \textit{C++.} Знаком с языком более пяти лет, каждый год улучшал свои знания о нём. Писал на C++ магистерскую работу(статический анализатор кода). Для удовольствия писал 
+бота для XMPP-конференций(\href{https://github.com/neexee/neexee/blob/master/src/module/smart/smartmodule.cpp}{пример старого кода}) и виртуальную машину, исполняющую байт-код самодельного языка программирования.
+Недавно начал делать библиотеку персистентных структур данных (\href{https://github.com/neexee/persist}{код}).
+При выборе литературы по C++ отдавал предпочтение таким книгам, как <<Effective Modern C++>>, <<Effective STL>>.
+\item \textit{Некоторые другие языки программирования.}
+\begin{itemize}
+\item \textit{Java}. На уровне <<Thinking in Java>>. Использовал для написания бакалаврской работы.
+\item \textit{Python} на уровне прочитавшего <<Dive Into Python>>.
+Изучал по собственной инициативе, нужен был для того, чтобы периодически писать короткие скрипты, например, для администраторских задач. Самый крупный проект -- распределенный интерпретатор
+самодельного языка программирования.
+\item Имею представление о \textit{C\#}, \textit{Perl}, \textit{Ruby}, \textit{Clojure}. Для Clojure пользовался библиотекой, реализующей модель акторов на легковесных тредах, очень понравилось.
+\item \textit{SQL.} MySQL, Oracle SQL. Пользовался такими библиотеками, как JDBC.
+\end{itemize}
+\item \textit{Параллельные вычисления.} Для C/C++ знаком с набором инструментов, предназначенных для параллельного программирования в общей и распределённой памяти:
+OpenMP, MPI, Pthreads, средства C++11, немного Boost.Thread. Знаю сложности разработки и проблемы параллельных программ.
+\item \textit{Паттерны проектирования} и некоторые идиомы, важные для C++, например, Pimpl, RAII.
+\item \textit{Системы контроля версий.} Несколько лет пользовался Git, немного SVN.
+\item \textit{Системы автоматизации сборки.} Autotools, cmake.
+
+\end{itemize}
+
+{\bf Профессиональные интересы}
+\begin {itemize}
+\item \textit{UNIX-like системы.} Опытный пользователь GNU/Linux, особенно Gentoo Linux. Интересовался устройством ядра, прочёл <<Linux Kernel Development>>.
+\item \textit{Параллельное программирование.} Существует множество интересных областей, которые я еще не затронул, например, распараллеливание на видеокартах, Erlang, lock-free структуры данных и многое другое.
+\end{itemize}
+
+\vfill
+\begin{center}
+\underline{~~~~~~~~~~~~~~~~~}
+
+19.07.2015
+\end{center}
+
+\end{document}
