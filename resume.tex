@@ -57,14 +57,13 @@
   \item Built fault-tolerant cross datacenter pipeline based on Kafka.
     It replaced the old single datacenter ZeroMQ-based pipeline. Made the transition seamless for consumers.
   \item Designed JSON-based RESTful API to replace Apache Thrift API for a search backend of the online version of 2GIS.
-    Also did some heavy lifting using templates in C++ there.
+    The backend required a good performance. Оptimized and metaprogrammed in C++ for it.
   \item Brought a new life to a dying Python-based geopositioning service. It was slow, hard to scale and fault intolerant.
-    Rewrote and stabilized it using asyncio, it could handle 3000 rps.
-    Rewrote it in Go, it could handle these 3000 rps without any special requiremens to a hardware.
-  \item Wrote a hundred of documents. It's design decisions, analytics, API and service overviews, tutorials, SLAs and postmortems.
+    Rewrote and stabilized it using asyncio. As load increased with years, rewrote it in Go. Now it handles heavy load without any special requirements to a hardware.
+  \item Wrote many documents. It's design decisions, analytics, API and service overviews, tutorials, SLAs and postmortems.
   \item Created and executed several long-term team roadmaps. Decomposed, estimated and prioritized hundreds of tasks.
   Actively participated in sprint planning and process improvement.
-  \item Coordinated cross-team feature development and releases.
+  \item Coordinated cross-team feature development. Has been preparing releases with dozens of branches for years.
   \end{itemize}
 
   \item since 2017 -- \href{http://fit.nsu.ru/}{Novosibirsk State University}
@@ -80,32 +79,30 @@
 
 {\bf Languages}
 \begin{itemize}
-\item \textit{Python}. I've been using it almost every day for the past 5 years.
-  Wrote hundreds of tests using pytest. Rewrote thousands of lines to satisfy mypy.
-  I value well-designed libraries like aiohttp, SQLAlchemy, Requests and Keras.
-\item \textit{C++}. Started the career using this language (С++14). I rarely see it even in reviews nowadays, my skills are rusty.
-  There's an example of \href{https://github.com/neexee/review}{my code}.
+\item \textit{Python}. Has been using it almost every day for the past 5 years.
+  Wrote a thousand of tests using pytest. Rewrote half of the project to satisfy mypy, increase maintainability and find old hidden bugs.
+  Values well-designed libraries like aiohttp, SQLAlchemy, Requests and Keras.
+\item \textit{C++}. Started the career using this language (С++14) but rarely sees it even in reviews nowadays. Skills are rusty but ready to be used again.
+  There's a \href{https://github.com/neexee/review}{code example}.
 \item \textit{Go}. Used it as a DSL for network applications. Some services were successful, some were not.
    Rewrote the old Python service in it, it was very satisfying.
-\item \textit{Scala}. Used it not because I like complex languages but because it allows to write high-quality Kafka-based services.
-  Go and C++ connectors for Kafka are not as good as their JVM-based counterparts.
-  Learned some facts about functional programming using it. It helps to write better code even in imperative languages.
+\item \textit{Scala}. Used it not because complex languages are alluring but because it allows to build high quality Kafka-based services. 
+  It's hard to achieve the same quality in other languages.
+  Learned some facts about functional programming using it. It helps to write better code even in any language.
 \end{itemize}
 
 {\bf Interests}
 \begin{itemize}
-  \item \textit{Learning}. Lifelong learner. The \href{https://www.goodreads.com/review/list/43338630-sergey-machulskis?shelf=professional}{list of books} I've read.
-  \item \textit{Strategy}. I like to come up with a great plan and analyze it down to small, invisible details. Usually it works out well.
-  \item \textit{GNU/Linux}. Happy Gentoo/Ubuntu user for a decade. I know enough about UNIX-like OSs to teach it at the university.
-  \item \textit{Distributed systems}. Defended a thesis on this topic, it's an old passion. I appreciate the motto ``Reliability, Maintainability, Scalability!''.
+  \item \textit{Learning}. Lifelong learner. The \href{https://www.goodreads.com/review/list/43338630-sergey-machulskis?shelf=professional}{list of read books}.
+  \item \textit{Strategy}. Likes to come up with a plan and analyze it down to small, almost invisible details. Usually it works out well.
+  \item \textit{GNU/Linux}. Happy Gentoo/Ubuntu user for a decade. Knows enough about UNIX-like OSs to teach it at the university.
+  \item \textit{Distributed systems}. Defended a thesis on this topic, it's an old passion. Appreciates the motto ``Reliability, Maintainability, Scalability!''.
      Can explain what's happening in tcpdump + wireshark, Zookeeper and WALs.
-  \item \textit{Documentation}. I'm trying hard to explain complex things in a simple manner. Did deep research on this topic.
-  \item \textit{UX}. I consider myself as a backend programmer just because I don't like GUIs. But I care deeply about UX.
-  \item \textit{Databases}. There's a list I'm happy to discuss and use: \textit{Redis}, \textit{Tarantool} \textit{PostgreSQL} and \textit{ClickHouse}.
-  \item \textit{Source control}. I've been preparing releases with dozens of branches for years.
-     Wrote \href{https://github.com/neexee/review/tree/master/components/Git}{a wrapper} around libgit2.
-  \item \textit{Communication}. Solved a lot of ``technical'' prolems just by a productive conversation.
-    I know some common cognitive biases. I strive to be a good listener, not a talker.
+  \item \textit{Documentation}. Trying hard to explain complex things in a simple manner. Did deep research on this topic.
+  \item \textit{UX}. Prefers backend just because doesn't like programming GUIs. But cares deeply about UX.
+  \item \textit{Databases}. There's a list he's happy to discuss and use: Redis, Tarantool, PostgreSQL and ClickHouse.
+  \item \textit{Communication}. Solved a lot of ``technical'' problems by a productive conversation.
+    Knows common cognitive biases. Strives to be a good listener, not a talker.
 \end{itemize}
 
 \end{document}
