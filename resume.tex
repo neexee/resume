@@ -48,50 +48,54 @@
 
 {\bf Job}
 \begin{itemize}
-\item since 2015 -- \href{https://2gis.com}{2GIS}. C++, Python, Go, Scala. Working on:
-\begin{itemize}
-\item CDN delivering updates in map data to 20 millions of mobile users
-\item Business statistics pipeline handling 20 thousand messages per second with ease
-\item Search backend for online version of 2GIS
-\item Geopositioning service
-\item Traffic jam monitoring service
-\end{itemize}
-\item since 2017 -- \href{http://fit.nsu.ru/}{Novosibirsk State University}. Teaching:
-\begin{itemize}
-\item Operating systems
-\item Parallel programming
-\end{itemize}
+  \item since 2015 -- \href{https://2gis.com}{2GIS}. Python, C++, Go, Scala. Working on:
+  \begin{itemize}
+    \item CDN delivering updates in map data to 20 millions of mobile users. Converted CDN-controlling CLI application to a huge RESTful API. It allowed us to automate internal processes and deliver faster and better updates for users. I was working on code quality and performance a lot, it's written in Python.
+    \item Business statistics pipeline handling 20 thousands messages per second with ease. Helped my team to build fault-tolerant cross datacenter system based on Kafka. It replaced the old ZeroMQ-based system which couldn't work in geodistributed mode.
+    \item Search backend for online version of 2GIS. Designed JSON-based RESTful API to replace Apache Thrift API. Did some heavy lifting using templates in C++.
+    \item Geopositioning service. Brought a new life to the dying Python service. It was slow and hard to scale. In the first iteration I rewrote it using asyncio, it could handle 3000 rps. In the second iteration I rewrote it in Go, it could handle these 3000 rps without any special requiremens to a hardware.
+  \end{itemize}
+
+  \item since 2017 -- \href{http://fit.nsu.ru/}{Novosibirsk State University}. Teaching:
+  \begin{itemize}
+    \item Operating systems
+    \item Parallel programming
+    \item Computing history
+  \end{itemize}
 \end{itemize}
 
 {\bf Education}
 \begin{itemize}
-\item 2009 -- 2015. \href{https://www.nsu.ru/n/}{Novosibirsk State University}. Master's degree in Information Technology.
+  \item 2009 -- 2015. \href{https://www.nsu.ru/n/}{Novosibirsk State University}. Master's degree in Information Technology.
 \end{itemize}
 
 {\bf Languages}
 \begin{itemize}
-\item \textit{Python}. My main workhorse. Wrote some pretty loaded backends using asyncio, CDN-controlling application and dozens of handy scripts. I love to write tests using pytest. I'm sceptical about ORM, but sqlalchemy is not bad.
-\item \textit{C++}. I understand most of the "Effective Modern C++". I love the language because it has endless possibilities. You can see an example of my code on \href{https://github.com/neexee/review}{github}.
-\item \textit{Go}. It's a pretty good language if you need a DSL for network application or small and fast CLI-application. Действительно большие проекты на нём не писал, мне кажется, Go не для них. Написал на нём несколько сервисов. Получил огромное удовольствие от переписывания Python-legacy на Go.
-\item \textit{Scala}. Люблю Apache Kafka, но библиотеки для Go и C++ не поспевают за её развитием. Scala для Kafka нативная, поэтому качественные сервисы было логично писать на ней. Немного разбираюсь в функциональном программировании, это часто помогает писать хороший код в не совсем функциональных языках.
+\item \textit{Python}. My main workhorse. I love to write tests using pytest. I love to check types with mypy. I'm sceptical about ORM, but sqlalchemy is not bad.
+\item \textit{C++}. I understand most of the ``Effective Modern C++'' but my skills a little bit rusty. There's an example of \href{https://github.com/neexee/review}{my code}.
+\item \textit{Go}. It's a pretty good language if you need a DSL for a network application or a small and fast CLI application. I've wrote several services using it. It was especially pleasant to re-write the old Python service in Go.
+\item \textit{Scala}. I love Apache Kafka, but Go and C++ connectors for it are not as good as their JVM-based counterparts. Scala is native language for Kafka. So I've wrote and supported several services using Scala just for the sake of their quality. I know a little bit about functional programming, it helps to write readable code from time to time.
 \end{itemize}
 
-{\bf С чем приятно иметь дело}
+{\bf What I like}
 \begin{itemize}
-\item \textit{GNU/Linux}. Ни разу не подводил меня ни как пользователя (я бывший гентушник со стажем), ни как программиста на C++ и Go. Буду преподавать курс операционных систем в этом году.
-\item \textit{Распределённые системы}. Reliability, Maintainability, Scalability! Понимание на уровне «Designing Data-Intensive Applications». Могу объяснить, что происходит в tcpdump + wireshark.
-\item \textit{Документация}. Стремлюсь объяснять сложные вещи простыми словами. Если получается, очень радуюсь. Пока пытаюсь научиться писать через \href{https://www.goodreads.com/review/list/43338630-sergey-machulskis?shelf=professional}{умение читать}.
-\item \textit{Базы данных}. Хорошая БД снимает головную боль, а не создаёт её. Примеры хороших БД на мой вкус -- \textit{Redis}, \textit{Tarantool} и \textit{ClickHouse}.
-\item \textit{Git}. Знаю десяток команд. Написал \href{https://github.com/neexee/review/tree/master/components/Git}{RAII-обёртку} над libgit2.
-\item \textit{LXD}. Раньше пользовался Docker, но мне больше по душе контейнеры со своим syslog и init, чем single app container.
-\item \textit{Однокнопочный деплой}. Пользовался Ansible, он неплох. С удовольствием попробую что-нибудь ещё.
+\item \textit{Learning}. Lifelong learner. The \href{https://www.goodreads.com/review/list/43338630-sergey-machulskis?shelf=professional}{list of books} I've read.
+\item \textit{GNU/Linux}. Happy Gentoo/Ubuntu user for a decade. I know enough about UNIX-like OSs to teach it at the university.
+\item \textit{Distributed systems}. I appreciate the motto ``Reliability, Maintainability, Scalability!''. ``Designing Data-Intensive Applications''-level of understanding. Can explain what's happening in tcpdump + wireshark, Zookeeper and WALs.
+\item \textit{Documentation}. I'm trying hard to explain complex things in a simple manner. Did deep research on this topic.
+\item \textit{UX}. I consider myself as a backend programmer just because I don't like GUIs. But I care deeply about UX.
+\item \textit{Databases}. There's a list I'm happy to discuss and use: \textit{Redis}, \textit{Tarantool} \textit{PostgreSQL} and \textit{ClickHouse}.
+\item \textit{Git}. I've been preparing releases with dozens of branches for years. I wrote \href{https://github.com/neexee/review/tree/master/components/Git}{a wrapper} around libgit2.
+\item \textit{Virtualization}. Docker and LXD are not new words to me. Had some brief encounters with OpenStack and k8s.
+\item \textit{Easy deploy}. I was using Ansible, it's not bad. It would be nice to try something else.
+\item \textit{Monitoring}. Grafana, Zabbix, triggers, SLAs. It's not an afterthought for me.
 \end{itemize}
 
 \vfill
 \begin{center}
 \underline{~~~~~~~~~~~~~~~~~}
 
-08.06.2018
+09.06.2019
 \end{center}
 
 \end{document}
