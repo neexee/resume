@@ -36,6 +36,7 @@
   {\hfill
     \begin{tabular}{c}
         \href{mailto:machulskissv@gmail.com}{machulskissv@gmail.com}\\
+        Novosibirsk \\
         +7 913 2066438\\
      \end{tabular}
   }
@@ -48,21 +49,29 @@
 
 {\bf Job}
 \begin{itemize}
-  \item since 2015 -- \href{https://2gis.com}{2GIS}. Python, C++, Go, Scala. Working on:
+  \item since 2015 -- \href{https://2gis.com}{2GIS}
   \begin{itemize}
-    \item CDN delivering updates in map data to 20 millions of mobile users. Converted CDN-controlling CLI application to a huge RESTful API. It allowed us to automate internal processes and deliver faster and better updates for users. I was working on code quality and performance a lot, it's written in Python.
-    \item Business statistics pipeline handling 20 thousands messages per second with ease. Helped my team to build fault-tolerant cross datacenter system based on Kafka. It replaced the old ZeroMQ-based system which couldn't work in geodistributed mode.
-    \item Search backend for online version of 2GIS. Designed JSON-based RESTful API to replace Apache Thrift API. Did some heavy lifting using templates in C++.
-    \item Geopositioning service. Brought a new life to the dying Python service. It was slow and hard to scale. In the first iteration I rewrote it using asyncio, it could handle 3000 rps. In the second iteration I rewrote it in Go, it could handle these 3000 rps without any special requiremens to a hardware.
+  \item Maintained a CDN delivering data to 20 millions of users.
+    Converted CDN-controlling CLI for humans to a well-structured RESTful API for robots.
+    Spent a fair amount of time improving Python code quality and performance.
+  \item Built fault-tolerant cross datacenter pipeline based on Kafka.
+    It replaced the old single datacenter ZeroMQ-based pipeline. Made the transition seamless for consumers.
+  \item Designed JSON-based RESTful API to replace Apache Thrift API for a search backend of the online version of 2GIS.
+    Also did some heavy lifting using templates in C++ there.
+  \item Brought a new life to a dying Python-based geopositioning service. It was slow, hard to scale and fault intolerant.
+    Rewrote and stabilized it using asyncio, it could handle 3000 rps.
+    Rewrote it in Go, it could handle these 3000 rps without any special requiremens to a hardware.
+  \item Wrote a hundred of documents. It's design decisions, analytics, API and service overviews, tutorials, SLAs and postmortems.
+  \item Created and executed several long-term team roadmaps. Decomposed, estimated and prioritized hundreds of tasks.
+  Actively participated in sprint planning and process improvement.
+  \item Coordinated cross-team feature development and releases.
   \end{itemize}
 
-  \item since 2017 -- \href{http://fit.nsu.ru/}{Novosibirsk State University}. Teaching:
-  \begin{itemize}
-    \item Operating systems
-    \item Parallel programming
-    \item Computing history
+  \item since 2017 -- \href{http://fit.nsu.ru/}{Novosibirsk State University}
+    \begin{itemize}
+      \item Taught courses on operating systems (system calls), parallel programming (pthreads) and computing history.
+    \end{itemize}
   \end{itemize}
-\end{itemize}
 
 {\bf Education}
 \begin{itemize}
@@ -71,31 +80,32 @@
 
 {\bf Languages}
 \begin{itemize}
-\item \textit{Python}. My main workhorse. I love to write tests using pytest. I love to check types with mypy. I'm sceptical about ORM, but sqlalchemy is not bad.
-\item \textit{C++}. I understand most of the ``Effective Modern C++'' but my skills a little bit rusty. There's an example of \href{https://github.com/neexee/review}{my code}.
-\item \textit{Go}. It's a pretty good language if you need a DSL for a network application or a small and fast CLI application. I've wrote several services using it. It was especially pleasant to re-write the old Python service in Go.
-\item \textit{Scala}. I love Apache Kafka, but Go and C++ connectors for it are not as good as their JVM-based counterparts. Scala is native language for Kafka. So I've wrote and supported several services using Scala just for the sake of their quality. I know a little bit about functional programming, it helps to write readable code from time to time.
+\item \textit{Python}. I've been using it almost every day for the past 5 years.
+  Wrote hundreds of tests using pytest. Rewrote thousands of lines to satisfy mypy.
+  I value well-designed libraries like aiohttp, SQLAlchemy, Requests and Keras.
+\item \textit{C++}. Started the career using this language (С++14). I rarely see it even in reviews nowadays, my skills are rusty.
+  There's an example of \href{https://github.com/neexee/review}{my code}.
+\item \textit{Go}. Used it as a DSL for network applications. Some services were successful, some were not.
+   Rewrote the old Python service in it, it was very satisfying.
+\item \textit{Scala}. Used it not because I like complex languages but because it allows to write high-quality Kafka-based services.
+  Go and C++ connectors for Kafka are not as good as their JVM-based counterparts.
+  Learned some facts about functional programming using it. It helps to write better code even in imperative languages.
 \end{itemize}
 
-{\bf What I like}
+{\bf Interests}
 \begin{itemize}
-\item \textit{Learning}. Lifelong learner. The \href{https://www.goodreads.com/review/list/43338630-sergey-machulskis?shelf=professional}{list of books} I've read.
-\item \textit{GNU/Linux}. Happy Gentoo/Ubuntu user for a decade. I know enough about UNIX-like OSs to teach it at the university.
-\item \textit{Distributed systems}. I appreciate the motto ``Reliability, Maintainability, Scalability!''. ``Designing Data-Intensive Applications''-level of understanding. Can explain what's happening in tcpdump + wireshark, Zookeeper and WALs.
-\item \textit{Documentation}. I'm trying hard to explain complex things in a simple manner. Did deep research on this topic.
-\item \textit{UX}. I consider myself as a backend programmer just because I don't like GUIs. But I care deeply about UX.
-\item \textit{Databases}. There's a list I'm happy to discuss and use: \textit{Redis}, \textit{Tarantool} \textit{PostgreSQL} and \textit{ClickHouse}.
-\item \textit{Git}. I've been preparing releases with dozens of branches for years. I wrote \href{https://github.com/neexee/review/tree/master/components/Git}{a wrapper} around libgit2.
-\item \textit{Virtualization}. Docker and LXD are not new words to me. Had some brief encounters with OpenStack and k8s.
-\item \textit{Easy deploy}. I was using Ansible, it's not bad. It would be nice to try something else.
-\item \textit{Monitoring}. Grafana, Zabbix, triggers, SLAs. It's not an afterthought for me.
+  \item \textit{Learning}. Lifelong learner. The \href{https://www.goodreads.com/review/list/43338630-sergey-machulskis?shelf=professional}{list of books} I've read.
+  \item \textit{Strategy}. I like to come up with a great plan and analyze it down to small, invisible details. Usually it works out well.
+  \item \textit{GNU/Linux}. Happy Gentoo/Ubuntu user for a decade. I know enough about UNIX-like OSs to teach it at the university.
+  \item \textit{Distributed systems}. Defended a thesis on this topic, it's an old passion. I appreciate the motto ``Reliability, Maintainability, Scalability!''.
+     Can explain what's happening in tcpdump + wireshark, Zookeeper and WALs.
+  \item \textit{Documentation}. I'm trying hard to explain complex things in a simple manner. Did deep research on this topic.
+  \item \textit{UX}. I consider myself as a backend programmer just because I don't like GUIs. But I care deeply about UX.
+  \item \textit{Databases}. There's a list I'm happy to discuss and use: \textit{Redis}, \textit{Tarantool} \textit{PostgreSQL} and \textit{ClickHouse}.
+  \item \textit{Source control}. I've been preparing releases with dozens of branches for years.
+     Wrote \href{https://github.com/neexee/review/tree/master/components/Git}{a wrapper} around libgit2.
+  \item \textit{Communication}. Solved a lot of ``technical'' prolems just by a productive conversation.
+    I know some common cognitive biases. I strive to be a good listener, not a talker.
 \end{itemize}
-
-\vfill
-\begin{center}
-\underline{~~~~~~~~~~~~~~~~~}
-
-09.06.2019
-\end{center}
 
 \end{document}
