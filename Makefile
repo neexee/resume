@@ -1,8 +1,8 @@
 .PHONY: all clean
-all: resume.pdf
+all: machulskis_cv.pdf
 
-resume.pdf: resume.tex
-		latexmk -pdf -use-make resume.tex
+machulskis_cv.pdf: resume.tex
+		xelatex -jobname machulskis_cv resume.tex
 clean:
-		latexmk -CA
+		rm -f *.log *.aux *.out *.pdf
 
