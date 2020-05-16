@@ -1,0 +1,129 @@
+\documentclass[final]{letter}
+\usepackage{nopageno}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{fix-cm}
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{lmodern}
+\usepackage[T1,T2A]{fontenc}
+
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}
+
+\usepackage[babel=true]{microtype}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\hoffset}{-.6in}
+\addtolength{\textheight}{1.6in}
+\addtolength{\voffset}{-.7in}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\def\code#1{\texttt{#1}}
+
+\begin{document}
+\begin{center}
+
+% Title bar
+{\fontsize{25}{40}\selectfont\bf{Machulskis Sergey}}
+  {\hfill
+    \begin{tabular}{c}
+        \href{mailto:sergeym@tuta.io}{sergeym@tuta.io}\\
+        Russia, Novosibirsk, Akademgorodok
+     \end{tabular}
+  }
+\rule{.98\textwidth}{1pt}
+
+% Need verticle space after hbar
+\addvspace{.1cm}
+
+\end{center}
+
+{\bf Experience}
+\begin{itemize}
+  \item since 2019 -- \href{https://www.ptsecurity.com/ww-en/}{Positive Technologies}. Senior programmer.
+  \begin{itemize}
+    \item Built parts of a \href{https://www.ptsecurity.com/ru-ru/products/cybersecurity-intelligence/}{threat intelligence platform}. Integrated third-party threat intelligence feeds.
+    \item Fixed a huge chunk of tech debt. Increased write/read throughput by two orders of magnitude.
+    \item Helped the team to release the platform on tight schedule.
+  \end{itemize}
+  \item 2017 - 2019 -- \href{http://fit.nsu.ru/}{Novosibirsk State University}. Assistant professor.
+    \begin{itemize}
+      \item Taught courses on operating systems (system calls), parallel programming (pthreads) and computing history.
+    \end{itemize}
+  \item 2015 - 2019 -- \href{https://2gis.com}{2GIS}. Senior programmer.
+  \begin{itemize}
+    \item Maintained a CDN delivering map data to 20 millions of users.
+      Automated operator workflow so updated maps could be delivered in one click daily.
+      The updates were monthly before that.
+      Improved Python code quality and performance a lot.
+       The service could churn a task for a week, the run time was brought to two hours.
+    \item Built a fault-tolerant cross datacenter pipeline based on \code{Apache Kafka}.
+      It replaced an old single datacenter \code{ZeroMQ}-based pipeline.
+      Made the transition seamless for consumers.
+    \item Brought a new life to a dying Python-based geopositioning service.
+    It was slow, hard to scale, and fault intolerant.
+      Rewrote and stabilized it using \code{asyncio}.
+      As the load increased with years, rewrote it in \code{Go}.
+      Now it handles heavy load on commodity hardware.
+    \item Created and executed several long-term team roadmaps.
+     Decomposed, estimated and prioritized hundreds of tasks.
+    Actively participated in sprint planning and process improvement.
+    Coordinated cross-team feature development.
+  \end{itemize}
+
+  \end{itemize}
+
+{\bf Education}
+\begin{itemize}
+  \item 2009 -- 2015. \href{https://www.nsu.ru/n/}{Novosibirsk State University}.
+  Master's degree in Information Technology.
+  Specialized in \href{http://ssd.sscc.ru/en/info}{parallel computing}.
+\end{itemize}
+
+{\bf Languages}
+\begin{itemize}
+\item \textit{Python}. Has been using it almost every day for 5 years straight.
+  Wrote a thousand tests using \code{pytest}.
+  Type-hinted an entire codebase to increase maintainability and to find hidden bugs.
+  Learned principles of good Python code from libraries like \code{aiohttp}, \code{SQLAlchemy} and \code{Requests}.
+  Can explain and use \href{https://www.python.org/dev/peps/pep-0020/}{\code{import this}}.
+  \href{https://mypy-lang.blogspot.com/2019/06/mypy-0710-released-new-semantic-analyzer.html}{Contributed to \code{mypy}}.
+  \item \textit{Go}. 4 years of experience in sum. 
+   The last year was devoted to Go exclusively.
+   Wrote a dozen services from scratch, rewrote Python services in Go (it was very satisfying) and supported huge monolithic apps.
+   Understands how to model complex domains and how to build good architecture using Go.
+   Wrote a couple of blog posts about Go, for example, \href{https://neexee.github.io/posts-en/how-to-structured-logging-in-go/}{a guide to structured logging in Go} and \href{https://neexee.github.io/posts-en/distributed-deadlock/}{a note on database/sql connection pools}. 
+  \item Also built applications using \code{C}, \code{C++}, \code{Java} and \code{Scala}, but this knowledge is probably outdated. Here's an \href{https://github.com/neexee/review}{example of C++} he used to write. Prefers not to use those languages for new projects.
+\end{itemize}
+
+{\bf Profile}
+\begin{itemize}
+  \item \textit{Learning}. Lifelong learner. There's a \href{https://www.goodreads.com/review/list/43338630-sergey-machulskis?shelf=professional}{bookshelf}.
+  \item \textit{GNU/Linux}. Built his own Linux from scratch (at home). Knows enough about UNIX-like OSs to teach it at the university.
+  Comfortable with DevOps work involving containers (\code{Docker}),
+   orchestration (\code{Ansible}, \href{https://neexee.github.io/posts-en/ansible-secrets/}{blog post}),
+   monitoring (\code{Grafana}, \code{Zabbix}), CI (\code{Jenkins}, \code{Gitlab})
+   and logs (\code{syslog}, \code{Elastic}). Practices \code{12-factor} apps.
+  \item \textit{Distributed systems}. Defended a thesis on this topic. Appreciates the motto ``Reliability, Maintainability, Scalability!''.
+    Can explain what's happening in \code{tcpdump} + \code{wireshark}, \code{Zookeeper} and \code{WAL}s.
+  \item \textit{Databases}. Used \code{Redis}, \code{Tarantool}, \code{PostgreSQL} and \code{ClickHouse}. Writes efficient SQL.
+  \item \textit{Documentation}. Knows how to document design decisions, API and service overviews, tutorials, SLAs, postmortems and so on.
+  \item \textit{UX}. Cares about UX even though it's "not backend responsibility".
+  \item \textit{Architecture}. Uses Clean architecture and domain-driven development in practice.
+  \item \textit{Communication}. Knows how to find real problems in generic complaints. 
+    Knows common cognitive biases.
+    Understands that programming is not just about writing code. The code ends up being less important than the architecture, and the architecture ends up being less important than social issues. 
+\end{itemize}
+
+\end{document}
