@@ -101,12 +101,13 @@ In other words, he's productive at being a senior backend developer, architect, 
        The service could churn a task for a week, the run time was brought to two hours.
     \item Built a fault-tolerant cross datacenter pipeline based on Apache Kafka.
       It replaced an old single datacenter ZeroMQ-based pipeline.
-      Made the transition seamless for consumers. The pipeline was used to deliver business statistics from users.
+      Made the transition seamless for consumers. The pipeline delivers business statistics from users,
+      deduplicates messages and marks fraud. Currently it handles 3k+ RPS.
     \item Brought a new life to a dying Python-based geopositioning service.
     It was slow, hard to scale, and fault intolerant.
       Rewrote and stabilized it using asyncio.
       As the load increased with years, rewrote it in Go.
-      Now it handles heavy load on commodity hardware.
+      Handles 2k+ RPS on medium-sized VM.
     \item Created and executed several long-term team roadmaps.
      Decomposed, estimated and prioritized hundreds of tasks.
     Actively participated in sprint planning and process improvement.
